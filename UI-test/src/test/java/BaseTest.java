@@ -15,7 +15,7 @@ abstract public class BaseTest {
 
     UserClient userClient;
 
-    public void setUp() {
+    private void setUp() {
         WebDriverManager.chromedriver().setup();
         Configuration.browser = "chrome";
         

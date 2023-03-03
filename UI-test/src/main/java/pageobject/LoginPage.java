@@ -87,7 +87,6 @@ public class LoginPage {
 
     @Step("Ввести данные пользователя")
     public MainPage loginRegisterUser(String email, String password) {
-        Selenide.sleep(250);
         setEmail(email);
         setPassword(password);
         return clickLoginPageAuthButton();

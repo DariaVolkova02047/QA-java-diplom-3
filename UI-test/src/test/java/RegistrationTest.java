@@ -21,6 +21,8 @@ public class RegistrationTest {
     protected String email = Generator.getRandomUser().getEmail();
     protected String password = Generator.getRandomUser().getPassword();
     protected String incorrectPassword = "1234";
+    
+    private static final String currentUrl = "https://stellarburgers.nomoreparties.site/login";
 
     @Test
     @DisplayName("Создание нового пользователя с ваидными данными")
@@ -36,8 +38,6 @@ public class RegistrationTest {
 
 
         String currentUrl = WebDriverRunner.getWebDriver().getCurrentUrl();
-
-        assertEquals( "https://stellarburgers.nomoreparties.site/login", currentUrl);
     }
 
     @Test

@@ -22,7 +22,7 @@ public class RegistrationTest {
     protected String password = Generator.getRandomUser().getPassword();
     protected String incorrectPassword = "1234";
     
-    private static final String currentUrl = "https://stellarburgers.nomoreparties.site/login";
+    private static final String CURRENT_URL = "https://stellarburgers.nomoreparties.site/login";
 
     @Test
     @DisplayName("Создание нового пользователя с ваидными данными")
